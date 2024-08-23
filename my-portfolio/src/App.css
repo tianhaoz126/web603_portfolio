@@ -1,0 +1,181 @@
+/* General Body Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 70px; /* To avoid content being hidden under the navbar */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #2c3e50;
+  padding: 1rem;
+  transition: background-color 0.3s;
+}
+
+.navbar.fixed-top {
+  background-color: #1abc9c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link {
+  color: #ecf0f1 !important;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  color: #16a085 !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(100%);
+}
+
+/* Hero Section Styles */
+#hero {
+  padding: 8rem 0;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  background-image: url('/images/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+#hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+#hero p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+#hero .btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+}
+
+/* Section Styles */
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+section {
+  margin: 3rem 0;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section Styles */
+#about {
+  padding: 4rem 0;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Projects Section Styles */
+#projects .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 2rem; /* Add spacing between cards */
+}
+
+#projects .card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+#projects .card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Resume Section Styles */
+#resume ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#resume ul li {
+  background-color: #f8f8f8;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Contact Section Styles */
+#contact .form-group label {
+  font-weight: bold;
+}
+
+#contact .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+#contact .btn-primary {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+#contact .btn-primary:hover {
+  background-color: #16a085;
+  border-color: #16a085;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1c1c1c;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+footer a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #16a085;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations */
+[data-aos] {
+  opacity: 0.8;
+  transition-property: opacity, transform;
+}
+
+[data-aos="fade-up"] {
+  transform: translate3d(0, 40px, 0);
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
